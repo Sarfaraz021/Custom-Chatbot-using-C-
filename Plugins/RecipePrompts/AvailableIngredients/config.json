@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Find recipes with the ingredients",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1000,
+      "temperature": 0.7,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "stop_sequences": [
+        "User:",
+        "Assistant:"
+      ]
+    }
+    },
+  "input_variables": [
+      {
+        "name": "input",
+        "description": "The user's request to find recipe which contains the ingredients names",
+        "required": true
+      }
+    ]
+}
